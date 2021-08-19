@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-estruturas-directivas';
+
+  exibir: boolean = true;
+  x: boolean = true;
+
+  toggleShow(){
+      this.exibir = !this.exibir;
+  }
+
 }
