@@ -1,0 +1,21 @@
+<hr>
+<h1>
+    TODO LIST</h1>
+<div>
+    <input #inputDescription type="text" placeholder="Descrição da Tarefa">
+    <button (click)="addTask(inputDescription.value)">Adicionar Tarefa</button>
+</div>
+
+<table>
+    <tr *ngFor="let task of tasks ; let i=index">
+        <td><input type="checkbox" [checked]="task.done"></td>
+        <td>{{task.description}}</td>
+        <td><button (click)="deleteTask(i) ">Excluir</button></td>
+    </tr>
+</table>
+
+<div ngSwitch="tasks.length">
+    <div *ngSwitchCase='0'>Nenhuma Tarefa</div>
+    <div *ngSwitchCase='1'>Uma Tarefa</div>
+    <div *ngSwitchDefault>{{tasks.length}} Tarefas</div>
+</div>
