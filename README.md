@@ -1,6 +1,14 @@
+
 # AngularEstruturasDirectivas
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+
+## BOOTCAMP IGTI
+Projeto desenvolvido no Bootcamp da IGTI.
+  Aprendendo sobre Diretivas Estrutais como: 
+    - ngIf
+    - ngFor
+    - ngSwitchCase
 
 ## Development server
 
